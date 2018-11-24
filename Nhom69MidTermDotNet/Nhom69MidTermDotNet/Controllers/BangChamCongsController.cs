@@ -19,9 +19,10 @@ namespace Nhom69MidTermDotNet.Controllers
         }
 
         // GET: BangChamCongs
-        public IActionResult Index()
+        public IActionResult Index(string thang)
         {
-            var qLNhansuContext = _context.BangChamCong.Include(b => b.MaNvNavigation);
+            var qLNhansuContext = _context.BangChamCong.Include(b => b.MaNvNavigation)
+                                  .Where(self => self.Thang == int.Parse(thang));
             return View(qLNhansuContext.ToList());
         }
 
@@ -56,7 +57,7 @@ namespace Nhom69MidTermDotNet.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaCc,Nam,Thang,MaNv,Songay,Luongthang")] BangChamCong bangChamCong)
+        public async Task<IActionResult> Create([Bind("MaCc,Nam,Thang,MaNv,Songay")] BangChamCong bangChamCong)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +91,7 @@ namespace Nhom69MidTermDotNet.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MaCc,Nam,Thang,MaNv,Songay,Luongthang")] BangChamCong bangChamCong)
+        public async Task<IActionResult> Edit(int id, [Bind("MaCc,Nam,Thang,MaNv,Songay")] BangChamCong bangChamCong)
         {
             if (id != bangChamCong.MaCc)
             {

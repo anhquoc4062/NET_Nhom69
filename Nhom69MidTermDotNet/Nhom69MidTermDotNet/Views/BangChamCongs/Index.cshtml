@@ -8,6 +8,17 @@
 
 <p>
     <a asp-action="Create">Create New</a>
+    Xem theo tháng
+    <form asp-action="Index" asp-controller="BangChamCongs">
+        <select name="thang">
+            @for (var i = 1; i <= 12; i++)
+            {
+                <option value="@i" asp-route-id="thang">@i</option>
+            }
+        </select>
+        <button type="submit">Xem theo tháng</button>
+    </form>
+
 </p>
 <table class="table">
     <thead>
@@ -25,7 +36,7 @@
                 @Html.DisplayNameFor(model => model.Luongthang)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MaNvNavigation)
+                Nhân viên
             </th>
             <th></th>
         </tr>
@@ -43,11 +54,10 @@
                 @Html.DisplayFor(modelItem => item.Songay)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Luongthang)
+                @((item.MaNvNavigation.LuongCb) / 22 + item.Songay)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MaNvNavigation.Hoten)
-            </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.MaCc">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.MaCc">Details</a> |
