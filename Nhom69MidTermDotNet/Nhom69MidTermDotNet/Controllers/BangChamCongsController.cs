@@ -19,10 +19,9 @@ namespace Nhom69MidTermDotNet.Controllers
         }
 
         // GET: BangChamCongs
-        public IActionResult Index(string thang)
+        public IActionResult Index()
         {
-            var qLNhansuContext = _context.BangChamCong.Include(b => b.MaNvNavigation)
-                                  .Where(self => self.Thang == int.Parse(thang));
+            var qLNhansuContext = _context.BangChamCong.Include(b => b.MaNvNavigation);
             return View(qLNhansuContext.ToList());
         }
 

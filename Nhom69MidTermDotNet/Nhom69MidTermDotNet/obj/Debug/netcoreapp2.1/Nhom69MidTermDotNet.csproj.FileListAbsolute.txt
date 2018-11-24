@@ -86,4 +86,3 @@ D:\Learning\Nhom69ASPCORE\Nhom69MidTermDotNet\Nhom69MidTermDotNet\obj\Debug\netc
 D:\Learning\Nhom69ASPCORE\Nhom69MidTermDotNet\Nhom69MidTermDotNet\obj\Debug\netcoreapp2.1\Razor\Views\BangChamCongs\Delete.g.cshtml.cs
 D:\Learning\Nhom69ASPCORE\Nhom69MidTermDotNet\Nhom69MidTermDotNet\obj\Debug\netcoreapp2.1\Razor\Views\BangChamCongs\Details.g.cshtml.cs
 D:\Learning\Nhom69ASPCORE\Nhom69MidTermDotNet\Nhom69MidTermDotNet\obj\Debug\netcoreapp2.1\Razor\Views\BangChamCongs\Edit.g.cshtml.cs
-D:\Learning\Nhom69ASPCORE\Nhom69MidTermDotNet\Nhom69MidTermDotNet\obj\Debug\netcoreapp2.1\Razor\Views\BangChamCongs\Index.g.cshtml.cs
