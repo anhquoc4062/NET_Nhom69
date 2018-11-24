@@ -24,6 +24,13 @@ namespace Nhom69MidTermDotNet.Controllers
             var qLNhansuContext = _context.BangChamCong.Include(b => b.MaNvNavigation);
             return View(qLNhansuContext.ToList());
         }
+        public IActionResult ListByMonth(string thang)
+        {
+            //int month = int.Parse(thang);
+            var qLNhansuContext = _context.BangChamCong.Include(b => b.MaNvNavigation)
+                                  .Where(self => self.Thang.ToString().Equals(thang));
+            return View(qLNhansuContext.ToList());
+        }
 
         // GET: BangChamCongs/Details/5
         public async Task<IActionResult> Details(int? id)

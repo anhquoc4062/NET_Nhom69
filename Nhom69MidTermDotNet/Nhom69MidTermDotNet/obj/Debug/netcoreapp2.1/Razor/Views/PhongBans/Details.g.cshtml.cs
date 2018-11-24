@@ -84,7 +84,7 @@ using Nhom69MidTermDotNet.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(381, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05f9f31246cc474f920c7b71d71ea97a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "763b6919a8154106855899c671e1357c", async() => {
                 BeginContext(429, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -119,7 +119,7 @@ using Nhom69MidTermDotNet.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(445, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08ab5b7562534b53a2235f9665182f2a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84dd05b27d7a4f05b814cee1d2b89bb7", async() => {
                 BeginContext(467, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

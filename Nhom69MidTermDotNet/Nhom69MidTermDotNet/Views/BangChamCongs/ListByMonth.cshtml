@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Nhom69MidTermDotNet.Models.BangChamCong>
+
+@{
+    ViewData["Title"] = "ListByMonth";
+}
+
+<h2>ListByMonth</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Thang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Songay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Luongthang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaNvNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Thang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Songay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Luongthang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNvNavigation.Hoten)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaCc">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MaCc">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaCc">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
