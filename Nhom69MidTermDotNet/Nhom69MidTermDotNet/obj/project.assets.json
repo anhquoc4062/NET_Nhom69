@@ -5452,7 +5452,7 @@
       ]
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
-      "sha512": "ab4+TZw3Sxqrr5TwrwVyABeQkhSxYMJXgG6yZw7T+r6Vz+hcOt+pK79o15ESG7kZvWAK9wRG7emnTIia5O6R1Q==",
+      "sha512": "sa/cztXesLyTgCiYuef0RK2EAImnak0w2wrjCh/YBTvbn4iV2eTy0q3F8CyUkGiaYEyxUKGVTko6+7SMRBL4Gg==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "files": [
@@ -12221,23 +12221,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thanh\\.nuget\\packages\\": {},
+    "C:\\Users\\AnhQuoc\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thanh\\source\\repos\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet.csproj",
+      "projectUniqueName": "D:\\Learning\\Nhom69ASPCORE\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet.csproj",
       "projectName": "Nhom69MidTermDotNet",
-      "projectPath": "C:\\Users\\thanh\\source\\repos\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet.csproj",
-      "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thanh\\source\\repos\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet\\obj\\",
+      "projectPath": "D:\\Learning\\Nhom69ASPCORE\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet.csproj",
+      "packagesPath": "C:\\Users\\AnhQuoc\\.nuget\\packages\\",
+      "outputPath": "D:\\Learning\\Nhom69ASPCORE\\Nhom69MidTermDotNet\\Nhom69MidTermDotNet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AnhQuoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

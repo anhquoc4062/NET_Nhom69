@@ -1,3 +1,4 @@
+---DROP DATABASE QLNhansu
 CREATE DATABASE QLNhansu
 GO
 USE QLNhansu
@@ -8,7 +9,7 @@ CREATE TABLE PhongBan (
 )
 GO
 CREATE TABLE NhanVien (
-    MaNV  int IDENTITY PRIMARY KEY ,
+   MaNV  int IDENTITY(1,1) PRIMARY KEY ,
    Hoten  NVARCHAR(40) NOT NULL,
    Diachi nvarchar(255),
    MaPB int,
@@ -17,6 +18,7 @@ CREATE TABLE NhanVien (
 )
 GO
 CREATE TABLE BangChamCong(
+	MaCC int IDENTITY(1,1) PRIMARY KEY,
 	Nam int,
 	Thang int,
 	MaNV int ,
